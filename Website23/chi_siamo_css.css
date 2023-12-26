@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: #f1eded;
+}
+
+.header {
+    padding-top: 30px;
+    color: #444;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Noi{
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.Noi:hover{
+    background-color: #ddd;
+    border-radius: 12px;
+}
+
+.Noi img{
+    width: 200px;
+    height: 200px;
+}
+
+.name{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.desig{
+    font-style: italic;
+    color: #888;
+}
+
+.about {
+    margin: 20px;
+    font-weight: lighter;
+    color: #000000;
+}
+
+.social-link{
+    margin: 14px;
+
+}
+
+.social-link a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: 0.4s;
+}
+
+.social-link a:hover{
+    transform: scale(1.5);
+}
+
+.social-link a i{
+    color: #444;
+}
+
+@media screen and (max-width: 600px) {
+    .teams{
+        max-width: 100%;
+    }
+}

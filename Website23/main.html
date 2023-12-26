@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="snake.png">
+	<title>Snake Game</title>
+</head>
+<body>
+<section class="header">
+		<nav>
+			<a href="main.html"><img src="snake.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="main.html">HOME</a></li>
+					<li><a target="_blank" href="contact.html">CONTATTA</a></li>
+					<li><a target="_blank" href="Chi_siamo.html">CHI SIAMO</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+<div class="text-box">
+	<h1>Gioco Del Serpente</h1>
+	<p>Gioco del serpente contruito in linguaggi di programmazione C.<br>Da questo sito puoi installare il gioco.</p>
+	<a href="SnakeGame23.exe" class="hero-btn">Installa Il Gioco</a>
+</div>
+</section>
+<section class="cta">
+	<h1>CONTATTAMI ADESSO	</h1>
+	<a target="_blank" href="contact.html" class="hero-btn">CONTATTA</a>
+</section>
+<section class="footer">
+	<h4>Chi Sono</h4>
+	<p>MI chiamo Akashdeepn ho 16 anni, studio Informatica a ITIS.<br></p>
+	<div class="icons">
+		<a target="_blank" href="https://www.facebook.com/profile.php?id=100089192334219"><i class="fa fa-facebook"></i></a>
+		<a target="_blank" href="https://twitter.com/akashde06415053"><i class="fa fa-twitter"></i></a>
+		<a target="_blank" href="https://www.instagram.com/aksingh089/"><i class="fa fa-instagram"></i></a>
+		<a target="_blank" href="https://www.linkedin.com/in/akashdeep-singh-955507260/"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<p>Creato da Akashdeep Singh</p>
+</section>
+	<script>
+		var navLinks = document.getElementById('navLinks');
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>

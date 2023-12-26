@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contatta</title>
+    <link rel="stylesheet" href="conatta.css" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="snake.png" alt="Snake Icon"> <!-- Aggiunto attributo alt per l'immagine -->
+</head>
+<body>
+    <div class="container">
+        <span class="big-circle"></span>
+        <img src="img/shape.png" class="square" alt="" />
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">CONTATTAMI ADESSO</h3>
+                <p class="text">Contattami adesso.</p>
+                <div class="info">
+                    <div class="information">
+                        <img src="location.png" class="icon" alt="" />
+                        <p>Via Maggio 3, Motta di Livenza, TV</p>
+                    </div>
+                    <div class="information">
+                        <img src="email.png" class="icon" alt="" />
+                        <p>singhakashdep08@gmail.com</p>
+                    </div>
+                    <div class="information">
+                        <img src="phone.png" class="icon" alt="" />
+                        <p>+39 380 340 5399</p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <p>Conntatta con noi :</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100089192334219">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/akashde06415053">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/aksingh089/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/akashdeep-singh-955507260/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+                <form action="test.php" method="post" autocomplete="off">
+
+                    <h3 class="title">Contattaci</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" required />
+                        <label for="name">Nome</label>
+                        <span>Nome</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" required />
+                        <label for="email">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input" />
+                        <label for="phone">Telefono</label>
+                        <span>Telefono</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input" required></textarea>
+                        <label for="message">Messaggio</label>
+                        <span>Messaggio</span>
+                    </div>
+                    <input type="submit" value="Invia" class="btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const inputs = document.querySelectorAll(".input");
+
+        function focusFunc() {
+            let parent = this.parentNode;
+            parent.classList.add("focus");
+        }
+
+        function blurFunc() {
+            let parent = this.parentNode;
+            if (this.value == "") {
+                parent.classList.remove("focus");
+            }
+        }
+
+        inputs.forEach((input) => {
+            input.addEventListener("focus", focusFunc);
+            input.addEventListener("blur", blurFunc);
+        });
+    </script>
+</body>
+</html>
